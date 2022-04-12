@@ -1,9 +1,18 @@
 package ist411_finalproject;
 
 /**
- *
- * @author joshd
+ * IST 411 Final Project
+ * File: 
+ * 
+ * Purpose: 
+ * 
+ * Last Edited On:
+ * Last Edited By:
+ * 
+ * @version 1.0 4/12/22
+ * @author Alex Koontz and Josh Wagner
  */
+
 public class IST411_FinalProject {
 
     /**
