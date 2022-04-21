@@ -2,8 +2,6 @@ package Model.Database;
 
 /**
  * IST 411 Final Project
- * File: 
- * 
  * File: DatabaseDetails.java
  * 
  * Purpose: This class represents the necessary details to make a connection to 
