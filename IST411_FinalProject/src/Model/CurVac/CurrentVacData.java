@@ -15,12 +15,12 @@ package Model.CurVac;
 
 public class CurrentVacData {
 
-    private VacAgeCounty vac[] = new VacAgeCounty[63];
-    private VacGenderCounty vgc[] = new VacGenderCounty[10];
-    private VacRaceCounty vrc[] = new VacRaceCounty[22];
-    private VacAgeState vas[] = new VacAgeState[4];
-    private VacGenderState vgs[] = new VacGenderState[4];
-    private VacRaceState vrs[] = new VacRaceState[4];
+    private VacAgeCounty vac[] = new VacAgeCounty[68];
+    private VacGenderCounty vgc[] = new VacGenderCounty[68];
+    private VacRaceCounty vrc[] = new VacRaceCounty[68];
+    private VacAgeState vas[] = new VacAgeState[20];
+    private VacGenderState vgs[] = new VacGenderState[3];
+    private VacRaceState vrs[] = new VacRaceState[7];
 
     public static void pullData() {
 
