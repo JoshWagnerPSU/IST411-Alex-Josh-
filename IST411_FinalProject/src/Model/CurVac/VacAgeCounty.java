@@ -1,13 +1,18 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-package Model;
+package Model.CurVac;
 
 /**
- *
- * @author akoon
+ * IST 411 Final Project
+ * File: 
+ * 
+ * Purpose: 
+ * 
+ * Last Edited On:4/20/2022
+ * Last Edited By: Alex Koontz
+ * 
+ * @version 1.0
+ * @author Alex Koontz and Josh Wagner
  */
+
 public class VacAgeCounty {
 
     private String county,

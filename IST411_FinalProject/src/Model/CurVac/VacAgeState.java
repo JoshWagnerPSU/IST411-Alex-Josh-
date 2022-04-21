@@ -1,32 +1,37 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-package Model;
+package Model.CurVac;
 
 /**
- *
- * @author akoon
+ * IST 411 Final Project
+ * File: 
+ * 
+ * Purpose: 
+ * 
+ * Last Edited On:4/20/2022
+ * Last Edited By: Alex Koontz
+ * 
+ * @version 1.0
+ * @author Alex Koontz and Josh Wagner
  */
-public class VacGenderState {
 
-    private String gender,
+public class VacAgeState {
+
+    private String age_group,
             partially_covered,
             fully_covered,
             additional_dose;
 
     /**
-     * @return the gender
+     * @return the age_group
      */
-    public String getGender() {
-        return gender;
+    public String getAge_group() {
+        return age_group;
     }
 
     /**
-     * @param gender the gender to set
+     * @param age_group the age_group to set
      */
-    public void setGender(String gender) {
-        this.gender = gender;
+    public void setAge_group(String age_group) {
+        this.age_group = age_group;
     }
 
     /**
