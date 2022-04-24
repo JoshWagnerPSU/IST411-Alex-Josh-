@@ -22,7 +22,7 @@ public class VacAgeCounty {
             partiallycovered_20_24,
             partiallycovered_25_29,
             partiallycovered_30_34,
-            partiallycovered_35_39,
+            partiallycovered_25_39,
             partiallycovered_40_44,
             partiallycovered_45_49,
             partiallycovered_50_54,
@@ -35,8 +35,6 @@ public class VacAgeCounty {
             partiallycovered_85_89,
             partiallycovered_90_94,
             partiallycovered_95_99,
-            partiallycovered_100_104,
-            partiallycovered_105_plus,
             fully_covered_age_group_5_9,
             fully_covered_age_group_10_14,
             fullycovered_15_19,
@@ -57,28 +55,25 @@ public class VacAgeCounty {
             fullycovered_90_94,
             fullycovered_95_99,
             fullycovered_100_104,
-            fullycovered_105_plus,
-            additional_dose_age_group_5_9,
             additional_dose_age_group_10_14,
-            additional_dose_15_19,
-            additional_dose_20_24,
-            additional_dose_25_29,
-            additional_dose_30_34,
-            additional_dose_35_39,
-            additional_dose_40_44,
-            additional_dose_45_49,
-            additional_dose_50_54,
-            additional_dose_55_59,
-            additional_dose_60_64,
-            additional_dose_65_69,
-            additional_dose_70_74,
-            additional_dose_75_79,
-            additional_dose_80_84,
-            additional_dose_85_89,
-            additional_dose_90_94,
-            additional_dose_95_99,
-            additional_dose_100_104,
-            additional_dose_105_plus;
+            additional_dose_age_group_15_19,
+            additional_dose_age_group_20_24,
+            additional_dose_age_group_25_29,
+            additional_dose_age_group_30_34,
+            additional_dose_age_group_35_39,
+            additional_dose_age_group_40_44,
+            additional_dose_age_group_45_49,
+            additional_dose_age_group_50_54,
+            additional_dose_age_group_55_59,
+            additional_dose_age_group_60_64,
+            additional_dose_age_group_65_69,
+            additional_dose_age_group_70_74,
+            additional_dose_age_group_75_79,
+            additional_dose_age_group_80_84,
+            additional_dose_age_group_85_89,
+            additional_dose_age_group_90_94,
+            additional_dose_age_group_95_99,
+            additional_dose_age_group_100_104;
 
     /**
      * @return the county
@@ -102,8 +97,7 @@ public class VacAgeCounty {
     }
 
     /**
-     * @param partially_covered_age_group_5_9 the
-     * partially_covered_age_group_5_9 to set
+     * @param partially_covered_age_group_5_9 the partially_covered_age_group_5_9 to set
      */
     public void setPartially_covered_age_group_5_9(String partially_covered_age_group_5_9) {
         this.partially_covered_age_group_5_9 = partially_covered_age_group_5_9;
@@ -117,8 +111,7 @@ public class VacAgeCounty {
     }
 
     /**
-     * @param partially_covered_age_group_10_14 the
-     * partially_covered_age_group_10_14 to set
+     * @param partially_covered_age_group_10_14 the partially_covered_age_group_10_14 to set
      */
     public void setPartially_covered_age_group_10_14(String partially_covered_age_group_10_14) {
         this.partially_covered_age_group_10_14 = partially_covered_age_group_10_14;
@@ -181,17 +174,17 @@ public class VacAgeCounty {
     }
 
     /**
-     * @return the partiallycovered_35_39
+     * @return the partiallycovered_25_39
      */
-    public String getPartiallycovered_35_39() {
-        return partiallycovered_35_39;
+    public String getPartiallycovered_25_39() {
+        return partiallycovered_25_39;
     }
 
     /**
-     * @param partiallycovered_35_39 the partiallycovered_35_39 to set
+     * @param partiallycovered_25_39 the partiallycovered_25_39 to set
      */
-    public void setPartiallycovered_35_39(String partiallycovered_35_39) {
-        this.partiallycovered_35_39 = partiallycovered_35_39;
+    public void setPartiallycovered_25_39(String partiallycovered_25_39) {
+        this.partiallycovered_25_39 = partiallycovered_25_39;
     }
 
     /**
@@ -363,34 +356,6 @@ public class VacAgeCounty {
     }
 
     /**
-     * @return the partiallycovered_100_104
-     */
-    public String getPartiallycovered_100_104() {
-        return partiallycovered_100_104;
-    }
-
-    /**
-     * @param partiallycovered_100_104 the partiallycovered_100_104 to set
-     */
-    public void setPartiallycovered_100_104(String partiallycovered_100_104) {
-        this.partiallycovered_100_104 = partiallycovered_100_104;
-    }
-
-    /**
-     * @return the partiallycovered_105_plus
-     */
-    public String getPartiallycovered_105_plus() {
-        return partiallycovered_105_plus;
-    }
-
-    /**
-     * @param partiallycovered_105_plus the partiallycovered_105_plus to set
-     */
-    public void setPartiallycovered_105_plus(String partiallycovered_105_plus) {
-        this.partiallycovered_105_plus = partiallycovered_105_plus;
-    }
-
-    /**
      * @return the fully_covered_age_group_5_9
      */
     public String getFully_covered_age_group_5_9() {
@@ -412,8 +377,7 @@ public class VacAgeCounty {
     }
 
     /**
-     * @param fully_covered_age_group_10_14 the fully_covered_age_group_10_14 to
-     * set
+     * @param fully_covered_age_group_10_14 the fully_covered_age_group_10_14 to set
      */
     public void setFully_covered_age_group_10_14(String fully_covered_age_group_10_14) {
         this.fully_covered_age_group_10_14 = fully_covered_age_group_10_14;
@@ -672,35 +636,6 @@ public class VacAgeCounty {
     }
 
     /**
-     * @return the fullycovered_105_plus
-     */
-    public String getFullycovered_105_plus() {
-        return fullycovered_105_plus;
-    }
-
-    /**
-     * @param fullycovered_105_plus the fullycovered_105_plus to set
-     */
-    public void setFullycovered_105_plus(String fullycovered_105_plus) {
-        this.fullycovered_105_plus = fullycovered_105_plus;
-    }
-
-    /**
-     * @return the additional_dose_age_group_5_9
-     */
-    public String getAdditional_dose_age_group_5_9() {
-        return additional_dose_age_group_5_9;
-    }
-
-    /**
-     * @param additional_dose_age_group_5_9 the additional_dose_age_group_5_9 to
-     * set
-     */
-    public void setAdditional_dose_age_group_5_9(String additional_dose_age_group_5_9) {
-        this.additional_dose_age_group_5_9 = additional_dose_age_group_5_9;
-    }
-
-    /**
      * @return the additional_dose_age_group_10_14
      */
     public String getAdditional_dose_age_group_10_14() {
@@ -708,277 +643,264 @@ public class VacAgeCounty {
     }
 
     /**
-     * @param additional_dose_age_group_10_14 the
-     * additional_dose_age_group_10_14 to set
+     * @param additional_dose_age_group_10_14 the additional_dose_age_group_10_14 to set
      */
     public void setAdditional_dose_age_group_10_14(String additional_dose_age_group_10_14) {
         this.additional_dose_age_group_10_14 = additional_dose_age_group_10_14;
     }
 
     /**
-     * @return the additional_dose_15_19
+     * @return the additional_dose_age_group_15_19
      */
-    public String getAdditional_dose_15_19() {
-        return additional_dose_15_19;
+    public String getAdditional_dose_age_group_15_19() {
+        return additional_dose_age_group_15_19;
     }
 
     /**
-     * @param additional_dose_15_19 the additional_dose_15_19 to set
+     * @param additional_dose_age_group_15_19 the additional_dose_age_group_15_19 to set
      */
-    public void setAdditional_dose_15_19(String additional_dose_15_19) {
-        this.additional_dose_15_19 = additional_dose_15_19;
+    public void setAdditional_dose_age_group_15_19(String additional_dose_age_group_15_19) {
+        this.additional_dose_age_group_15_19 = additional_dose_age_group_15_19;
     }
 
     /**
-     * @return the additional_dose_20_24
+     * @return the additional_dose_age_group_20_24
      */
-    public String getAdditional_dose_20_24() {
-        return additional_dose_20_24;
+    public String getAdditional_dose_age_group_20_24() {
+        return additional_dose_age_group_20_24;
     }
 
     /**
-     * @param additional_dose_20_24 the additional_dose_20_24 to set
+     * @param additional_dose_age_group_20_24 the additional_dose_age_group_20_24 to set
      */
-    public void setAdditional_dose_20_24(String additional_dose_20_24) {
-        this.additional_dose_20_24 = additional_dose_20_24;
+    public void setAdditional_dose_age_group_20_24(String additional_dose_age_group_20_24) {
+        this.additional_dose_age_group_20_24 = additional_dose_age_group_20_24;
     }
 
     /**
-     * @return the additional_dose_25_29
+     * @return the additional_dose_age_group_25_29
      */
-    public String getAdditional_dose_25_29() {
-        return additional_dose_25_29;
+    public String getAdditional_dose_age_group_25_29() {
+        return additional_dose_age_group_25_29;
     }
 
     /**
-     * @param additional_dose_25_29 the additional_dose_25_29 to set
+     * @param additional_dose_age_group_25_29 the additional_dose_age_group_25_29 to set
      */
-    public void setAdditional_dose_25_29(String additional_dose_25_29) {
-        this.additional_dose_25_29 = additional_dose_25_29;
+    public void setAdditional_dose_age_group_25_29(String additional_dose_age_group_25_29) {
+        this.additional_dose_age_group_25_29 = additional_dose_age_group_25_29;
     }
 
     /**
-     * @return the additional_dose_30_34
+     * @return the additional_dose_age_group_30_34
      */
-    public String getAdditional_dose_30_34() {
-        return additional_dose_30_34;
+    public String getAdditional_dose_age_group_30_34() {
+        return additional_dose_age_group_30_34;
     }
 
     /**
-     * @param additional_dose_30_34 the additional_dose_30_34 to set
+     * @param additional_dose_age_group_30_34 the additional_dose_age_group_30_34 to set
      */
-    public void setAdditional_dose_30_34(String additional_dose_30_34) {
-        this.additional_dose_30_34 = additional_dose_30_34;
+    public void setAdditional_dose_age_group_30_34(String additional_dose_age_group_30_34) {
+        this.additional_dose_age_group_30_34 = additional_dose_age_group_30_34;
     }
 
     /**
-     * @return the additional_dose_35_39
+     * @return the additional_dose_age_group_35_39
      */
-    public String getAdditional_dose_35_39() {
-        return additional_dose_35_39;
+    public String getAdditional_dose_age_group_35_39() {
+        return additional_dose_age_group_35_39;
     }
 
     /**
-     * @param additional_dose_35_39 the additional_dose_35_39 to set
+     * @param additional_dose_age_group_35_39 the additional_dose_age_group_35_39 to set
      */
-    public void setAdditional_dose_35_39(String additional_dose_35_39) {
-        this.additional_dose_35_39 = additional_dose_35_39;
+    public void setAdditional_dose_age_group_35_39(String additional_dose_age_group_35_39) {
+        this.additional_dose_age_group_35_39 = additional_dose_age_group_35_39;
     }
 
     /**
-     * @return the additional_dose_40_44
+     * @return the additional_dose_age_group_40_44
      */
-    public String getAdditional_dose_40_44() {
-        return additional_dose_40_44;
+    public String getAdditional_dose_age_group_40_44() {
+        return additional_dose_age_group_40_44;
     }
 
     /**
-     * @param additional_dose_40_44 the additional_dose_40_44 to set
+     * @param additional_dose_age_group_40_44 the additional_dose_age_group_40_44 to set
      */
-    public void setAdditional_dose_40_44(String additional_dose_40_44) {
-        this.additional_dose_40_44 = additional_dose_40_44;
+    public void setAdditional_dose_age_group_40_44(String additional_dose_age_group_40_44) {
+        this.additional_dose_age_group_40_44 = additional_dose_age_group_40_44;
     }
 
     /**
-     * @return the additional_dose_45_49
+     * @return the additional_dose_age_group_45_49
      */
-    public String getAdditional_dose_45_49() {
-        return additional_dose_45_49;
+    public String getAdditional_dose_age_group_45_49() {
+        return additional_dose_age_group_45_49;
     }
 
     /**
-     * @param additional_dose_45_49 the additional_dose_45_49 to set
+     * @param additional_dose_age_group_45_49 the additional_dose_age_group_45_49 to set
      */
-    public void setAdditional_dose_45_49(String additional_dose_45_49) {
-        this.additional_dose_45_49 = additional_dose_45_49;
+    public void setAdditional_dose_age_group_45_49(String additional_dose_age_group_45_49) {
+        this.additional_dose_age_group_45_49 = additional_dose_age_group_45_49;
     }
 
     /**
-     * @return the additional_dose_50_54
+     * @return the additional_dose_age_group_50_54
      */
-    public String getAdditional_dose_50_54() {
-        return additional_dose_50_54;
+    public String getAdditional_dose_age_group_50_54() {
+        return additional_dose_age_group_50_54;
     }
 
     /**
-     * @param additional_dose_50_54 the additional_dose_50_54 to set
+     * @param additional_dose_age_group_50_54 the additional_dose_age_group_50_54 to set
      */
-    public void setAdditional_dose_50_54(String additional_dose_50_54) {
-        this.additional_dose_50_54 = additional_dose_50_54;
+    public void setAdditional_dose_age_group_50_54(String additional_dose_age_group_50_54) {
+        this.additional_dose_age_group_50_54 = additional_dose_age_group_50_54;
     }
 
     /**
-     * @return the additional_dose_55_59
+     * @return the additional_dose_age_group_55_59
      */
-    public String getAdditional_dose_55_59() {
-        return additional_dose_55_59;
+    public String getAdditional_dose_age_group_55_59() {
+        return additional_dose_age_group_55_59;
     }
 
     /**
-     * @param additional_dose_55_59 the additional_dose_55_59 to set
+     * @param additional_dose_age_group_55_59 the additional_dose_age_group_55_59 to set
      */
-    public void setAdditional_dose_55_59(String additional_dose_55_59) {
-        this.additional_dose_55_59 = additional_dose_55_59;
+    public void setAdditional_dose_age_group_55_59(String additional_dose_age_group_55_59) {
+        this.additional_dose_age_group_55_59 = additional_dose_age_group_55_59;
     }
 
     /**
-     * @return the additional_dose_60_64
+     * @return the additional_dose_age_group_60_64
      */
-    public String getAdditional_dose_60_64() {
-        return additional_dose_60_64;
+    public String getAdditional_dose_age_group_60_64() {
+        return additional_dose_age_group_60_64;
     }
 
     /**
-     * @param additional_dose_60_64 the additional_dose_60_64 to set
+     * @param additional_dose_age_group_60_64 the additional_dose_age_group_60_64 to set
      */
-    public void setAdditional_dose_60_64(String additional_dose_60_64) {
-        this.additional_dose_60_64 = additional_dose_60_64;
+    public void setAdditional_dose_age_group_60_64(String additional_dose_age_group_60_64) {
+        this.additional_dose_age_group_60_64 = additional_dose_age_group_60_64;
     }
 
     /**
-     * @return the additional_dose_65_69
+     * @return the additional_dose_age_group_65_69
      */
-    public String getAdditional_dose_65_69() {
-        return additional_dose_65_69;
+    public String getAdditional_dose_age_group_65_69() {
+        return additional_dose_age_group_65_69;
     }
 
     /**
-     * @param additional_dose_65_69 the additional_dose_65_69 to set
+     * @param additional_dose_age_group_65_69 the additional_dose_age_group_65_69 to set
      */
-    public void setAdditional_dose_65_69(String additional_dose_65_69) {
-        this.additional_dose_65_69 = additional_dose_65_69;
+    public void setAdditional_dose_age_group_65_69(String additional_dose_age_group_65_69) {
+        this.additional_dose_age_group_65_69 = additional_dose_age_group_65_69;
     }
 
     /**
-     * @return the additional_dose_70_74
+     * @return the additional_dose_age_group_70_74
      */
-    public String getAdditional_dose_70_74() {
-        return additional_dose_70_74;
+    public String getAdditional_dose_age_group_70_74() {
+        return additional_dose_age_group_70_74;
     }
 
     /**
-     * @param additional_dose_70_74 the additional_dose_70_74 to set
+     * @param additional_dose_age_group_70_74 the additional_dose_age_group_70_74 to set
      */
-    public void setAdditional_dose_70_74(String additional_dose_70_74) {
-        this.additional_dose_70_74 = additional_dose_70_74;
+    public void setAdditional_dose_age_group_70_74(String additional_dose_age_group_70_74) {
+        this.additional_dose_age_group_70_74 = additional_dose_age_group_70_74;
     }
 
     /**
-     * @return the additional_dose_75_79
+     * @return the additional_dose_age_group_75_79
      */
-    public String getAdditional_dose_75_79() {
-        return additional_dose_75_79;
+    public String getAdditional_dose_age_group_75_79() {
+        return additional_dose_age_group_75_79;
     }
 
     /**
-     * @param additional_dose_75_79 the additional_dose_75_79 to set
+     * @param additional_dose_age_group_75_79 the additional_dose_age_group_75_79 to set
      */
-    public void setAdditional_dose_75_79(String additional_dose_75_79) {
-        this.additional_dose_75_79 = additional_dose_75_79;
+    public void setAdditional_dose_age_group_75_79(String additional_dose_age_group_75_79) {
+        this.additional_dose_age_group_75_79 = additional_dose_age_group_75_79;
     }
 
     /**
-     * @return the additional_dose_80_84
+     * @return the additional_dose_age_group_80_84
      */
-    public String getAdditional_dose_80_84() {
-        return additional_dose_80_84;
+    public String getAdditional_dose_age_group_80_84() {
+        return additional_dose_age_group_80_84;
     }
 
     /**
-     * @param additional_dose_80_84 the additional_dose_80_84 to set
+     * @param additional_dose_age_group_80_84 the additional_dose_age_group_80_84 to set
      */
-    public void setAdditional_dose_80_84(String additional_dose_80_84) {
-        this.additional_dose_80_84 = additional_dose_80_84;
+    public void setAdditional_dose_age_group_80_84(String additional_dose_age_group_80_84) {
+        this.additional_dose_age_group_80_84 = additional_dose_age_group_80_84;
     }
 
     /**
-     * @return the additional_dose_85_89
+     * @return the additional_dose_age_group_85_89
      */
-    public String getAdditional_dose_85_89() {
-        return additional_dose_85_89;
+    public String getAdditional_dose_age_group_85_89() {
+        return additional_dose_age_group_85_89;
     }
 
     /**
-     * @param additional_dose_85_89 the additional_dose_85_89 to set
+     * @param additional_dose_age_group_85_89 the additional_dose_age_group_85_89 to set
      */
-    public void setAdditional_dose_85_89(String additional_dose_85_89) {
-        this.additional_dose_85_89 = additional_dose_85_89;
+    public void setAdditional_dose_age_group_85_89(String additional_dose_age_group_85_89) {
+        this.additional_dose_age_group_85_89 = additional_dose_age_group_85_89;
     }
 
     /**
-     * @return the additional_dose_90_94
+     * @return the additional_dose_age_group_90_94
      */
-    public String getAdditional_dose_90_94() {
-        return additional_dose_90_94;
+    public String getAdditional_dose_age_group_90_94() {
+        return additional_dose_age_group_90_94;
     }
 
     /**
-     * @param additional_dose_90_94 the additional_dose_90_94 to set
+     * @param additional_dose_age_group_90_94 the additional_dose_age_group_90_94 to set
      */
-    public void setAdditional_dose_90_94(String additional_dose_90_94) {
-        this.additional_dose_90_94 = additional_dose_90_94;
+    public void setAdditional_dose_age_group_90_94(String additional_dose_age_group_90_94) {
+        this.additional_dose_age_group_90_94 = additional_dose_age_group_90_94;
     }
 
     /**
-     * @return the additional_dose_95_99
+     * @return the additional_dose_age_group_95_99
      */
-    public String getAdditional_dose_95_99() {
-        return additional_dose_95_99;
+    public String getAdditional_dose_age_group_95_99() {
+        return additional_dose_age_group_95_99;
     }
 
     /**
-     * @param additional_dose_95_99 the additional_dose_95_99 to set
+     * @param additional_dose_age_group_95_99 the additional_dose_age_group_95_99 to set
      */
-    public void setAdditional_dose_95_99(String additional_dose_95_99) {
-        this.additional_dose_95_99 = additional_dose_95_99;
+    public void setAdditional_dose_age_group_95_99(String additional_dose_age_group_95_99) {
+        this.additional_dose_age_group_95_99 = additional_dose_age_group_95_99;
     }
 
     /**
-     * @return the additional_dose_100_104
+     * @return the additional_dose_age_group_100_104
      */
-    public String getAdditional_dose_100_104() {
-        return additional_dose_100_104;
+    public String getAdditional_dose_age_group_100_104() {
+        return additional_dose_age_group_100_104;
     }
 
     /**
-     * @param additional_dose_100_104 the additional_dose_100_104 to set
+     * @param additional_dose_age_group_100_104 the additional_dose_age_group_100_104 to set
      */
-    public void setAdditional_dose_100_104(String additional_dose_100_104) {
-        this.additional_dose_100_104 = additional_dose_100_104;
+    public void setAdditional_dose_age_group_100_104(String additional_dose_age_group_100_104) {
+        this.additional_dose_age_group_100_104 = additional_dose_age_group_100_104;
     }
 
-    /**
-     * @return the additional_dose_105_plus
-     */
-    public String getAdditional_dose_105_plus() {
-        return additional_dose_105_plus;
-    }
-
-    /**
-     * @param additional_dose_105_plus the additional_dose_105_plus to set
-     */
-    public void setAdditional_dose_105_plus(String additional_dose_105_plus) {
-        this.additional_dose_105_plus = additional_dose_105_plus;
-    }
-
+    
+    
 }

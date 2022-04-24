@@ -23,7 +23,7 @@ public class CurrentDeathData {
      * 
      */
     public CurrentDeathData(){
-       pullData(); 
+       pullData();
     }
     
     
