@@ -17,6 +17,8 @@ import java.sql.*;
 
 public class HistoricalVacCalc {
     
+    private static Statement stmt;
+    
     /**
      * 
      * 
@@ -26,8 +28,11 @@ public class HistoricalVacCalc {
      * @param suboption
      * @return 
      */
-    public static String run(Statement stmt, String location, String option, 
-        String suboption){
+    public static String run(Statement stmt, String location, 
+        String begDateText, String endDateText){
+        
+        HistoricalVacCalc.stmt = stmt;
+        
         
         String answer = "";
         

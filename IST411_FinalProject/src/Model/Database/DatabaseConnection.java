@@ -15,8 +15,6 @@ package Model.Database;
 
 import java.sql.*;
 import java.io.*;
-import java.net.URL;
-import java.nio.charset.StandardCharsets;
 
 public class DatabaseConnection {
     
@@ -61,14 +59,14 @@ public class DatabaseConnection {
     /**
      * @return the con
      */
-    public static Connection getCon() {
+    public Connection getCon() {
         return con;
     }
 
     /**
      * @return the stmt
      */
-    public static Statement getStmt() {
+    public Statement getStmt() {
         return stmt;
     }
 }

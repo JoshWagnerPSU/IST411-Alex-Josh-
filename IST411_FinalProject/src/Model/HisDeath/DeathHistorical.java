@@ -16,9 +16,9 @@ package Model.HisDeath;
 public class DeathHistorical {
     // Private Attributes
     private String county;
-    // Private Attributes
+
     private String date;
-    // Private Attributes
+
     private String deaths_cume;
     
     public DeathHistorical(){

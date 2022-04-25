@@ -26,8 +26,8 @@ public class HistoricalDeathCalc {
      * @param suboption
      * @return 
      */
-    public static String run(Statement stmt, String location, String option, 
-        String suboption){
+    public static String run(Statement stmt, String location, String date1, 
+        String date2){
         
         String answer = "";
         
