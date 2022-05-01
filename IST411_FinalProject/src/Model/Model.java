@@ -27,7 +27,7 @@ public class Model {
         //HistoricalVacDataUtil.run(dbc.getStmt());
         //HistoricalDeathDataUtil.run(dbc.getStmt());
         //System.out.println(HistoricalVacCalc.run(dbc.getStmt(), "Lancaster", "2/2/2022", "3/1/2022"));
-        //System.out.println(HistoricalDeathCalc.run(dbc.getStmt(), "Lancaster", "3/1/2022", "3/1/2022"));
-        System.out.println(HistoricalDeathCalc2.run(dbc.getStmt(), "State", "3/1/2020") );
+        //System.out.println(HistoricalDeathCalc.run(dbc.getStmt(), "York", "5/1/2021", "6/1/2021"));
+        System.out.println(HistoricalDeathCalc2.run(dbc.getStmt(), "York", "5/1/2021") );
     }
 }
