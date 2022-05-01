@@ -32,7 +32,7 @@ public class HistoricalVacDataUtil {
     
     public static void run(Statement stmt){
         HistoricalVacDataUtil.stmt = stmt;
-        //createTable();
+        createTable();
         determineUpdateNeed();
     }
 
@@ -42,7 +42,7 @@ public class HistoricalVacDataUtil {
      * 
      */
     private static void createTable(){
-       String create = "CREATE TABLE HistoricalVac ( " 
+       String create = "CREATE TABLE Historical_Vac ( " 
                + "EntryDate DATE NOT NULL, " 
                + "County VARCHAR(255) NOT NULL, " 
                + "PartiallyCovered INT, " 
@@ -66,20 +66,18 @@ public class HistoricalVacDataUtil {
        
         String firstDataDate = "2020-12-31";
         String lastDateQuery = "SELECT MAX(EntryDate) AS LastDate FROM "
-               + "HistoricalVac";
+               + "Historical_Vac";
        
         try{
             ResultSet rs = stmt.executeQuery(lastDateQuery);
+            rs.next();
 
-            if(rs.next()){
-                if(rs.getDate("LastDate") != today){
-                    lastUpdate = rs.getDate("LastDate");
-                } else{
-                    lastUpdate = today;
-                }
-            }
-            else{
+            if(rs.getDate("LastDate") == today){
+                lastUpdate = today;
+            } else if (rs.getDate("LastDate") == null){
                 lastUpdate = sdf.parse(firstDataDate);
+            } else {
+                lastUpdate = rs.getDate("LastDate");
             }
 
             if(lastUpdate != today){
@@ -161,7 +159,7 @@ public class HistoricalVacDataUtil {
                     extra = "0";
                 }
                 
-                String update = "INSERT INTO HistoricalVac "
+                String update = "INSERT INTO Historical_Vac "
                     + "(EntryDate, County, PartiallyCovered, FullyCovered, "
                     + "AdditionalDose) "
                     + "VALUES ('"

@@ -4,9 +4,10 @@ package Model.HisVac;
  * IST 411 Final Project
  * File: HistroicalVacCalc.java
  * 
- * Purpose: VacHistorical.java
+ * Purpose: This class represents a JSON data object that describes different 
+ *          vaccination totals for a county in PA on a specific date.
  * 
- * Last Edited On:4/20/2022
+ * Last Edited On:4/30/2022
  * Last Edited By: Josh Wagner
  * 
  * @version 1.0
@@ -20,13 +21,6 @@ public class VacHistorical {
                    partially_covered,
                    fully_covered,
                    additional_dose1;
-    
-    /**
-     * 
-     */
-    public VacHistorical(){
-        
-    }
 
     /**
      * @return the date
@@ -96,7 +90,5 @@ public class VacHistorical {
      */
     public void setAdditional_dose1(String additional_dose1) {
         this.additional_dose1 = additional_dose1;
-    }
-    
-    
+    }    
 }

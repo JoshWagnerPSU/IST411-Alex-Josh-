@@ -4,9 +4,11 @@ package Model.HisDeath;
  * IST 411 Final Project
  * File: DeathHistorical.java
  * 
- * Purpose: 
+ * Purpose: This class represents a JSON data object that describes the total 
+ *          amount of Covid related deaths in a county of PA for a specific 
+ *          month.
  * 
- * Last Edited On:4/20/2022
+ * Last Edited On:4/30/2022
  * Last Edited By: Josh Wagner
  * 
  * @version 1.0
@@ -16,14 +18,8 @@ package Model.HisDeath;
 public class DeathHistorical {
     // Private Attributes
     private String county;
-
     private String date;
-
     private String deaths_cume;
-    
-    public DeathHistorical(){
-        
-    }
 
     /**
      * @return the county
@@ -66,6 +62,4 @@ public class DeathHistorical {
     public void setDeaths_cume(String deaths_cume) {
         this.deaths_cume = deaths_cume;
     }
-    
-    
 }
