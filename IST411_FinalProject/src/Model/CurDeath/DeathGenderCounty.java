@@ -4,7 +4,8 @@ package Model.CurDeath;
  * IST 411 Final Project
  * File: DeathGenderCounty.java
  * 
- * Purpose: 
+ * Purpose: Represents a JSON object that describes the number of deaths in a 
+ *          specific county for a specific gender group.
  * 
  * Last Edited On:4/20/2022
  * Last Edited By: Josh Wagner
@@ -18,13 +19,6 @@ public class DeathGenderCounty {
     private String county,
                    sex,
                    count;
-    
-    /**
-     * 
-     */
-    public DeathGenderCounty(){
-        
-    }
 
     /**
      * @return the county
@@ -66,7 +60,5 @@ public class DeathGenderCounty {
      */
     public void setCount(String count) {
         this.count = count;
-    }
-    
-    
+    }  
 }

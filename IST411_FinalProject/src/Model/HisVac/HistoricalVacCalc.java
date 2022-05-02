@@ -86,23 +86,14 @@ public class HistoricalVacCalc {
             } 
             // Else, valid search dates are being used 
             else {        
-                // Checks if the start and end date are the same
-                if(start.compareTo(end) == 0){
-                    // Formats beginning of output for single date
-                    output = "On " + sdf.format(start); 
-                } else {
-                    // Formats beginning of output for two dates
-                    output = "Between " + sdf.format(start) + " and " 
-                            + sdf.format(end);
-                }
-                
+
                 // Calls calculate() to add detailed answer to output
-                output += calculate(location, start, end);
+                output = calculate(location, start, end);
                 
                 // Checks if start was before first possible entry
                 if(start.compareTo(first) == -1){
                     // Adds note to end of output
-                    output += "\nNOTE: Your Beginning Date was prior to when "
+                    output += "\nNote: Your Beginning Date was prior to when "
                             + "our records began (01/01/2021).";
                 }
                 
@@ -138,7 +129,7 @@ public class HistoricalVacCalc {
         int part = 0, full = 0, extra = 0; // Holds vacciniaation values
         
         // Checks if the user is asking about all counties
-        if (location.equals("State")){
+        if (location.equals("All")){
             // Sets query to search for entries of all counties between dates
             query = "SELECT * FROM Historical_Vac WHERE EntryDate BETWEEN '" 
                     + sdf.format(start) + "' AND '" + sdf.format(end) + "'";
@@ -162,37 +153,13 @@ public class HistoricalVacCalc {
             System.out.println(e.toString());
         }
         
-        // Local variables to format data into String text
-        String output, partOutput, fullOutput, extraOutput, locationOutput;
-
-        if (part == 1){ // Checks if only 1 person was partially vaccinated
-            partOutput = "1 person was"; // Formats text for single person
-        } else {
-            partOutput = part + " people were"; // Formats text for multiple 
-        }
-
-        if (full == 1){ // Checks if only 1 person was fully vaccinated
-            fullOutput = "1 person was"; // Formats text for single person
-        } else {
-            fullOutput = full + " people were"; // Formats text for multiple
-        }
-
-        if (extra == 1){ // Checks if only 1 person recieved an extra dose
-            extraOutput = "1 person"; // Formats text for single person
-        } else {
-            extraOutput = full + " people"; // Formats text for multiple
-        }
-
-        if (location.equals("State")){ // Checks if the location was all of PA
-            locationOutput = "Pennsylvania"; // Formats text for all of PA
-        } else {
-            locationOutput = location + " County"; // Formats text for county
-        }
+        // Local variable to format answer
+        String output;
 
         // Compiles local Sting variables to create a final answer
-        output = " "+ partOutput + " partially vaccinated, " + fullOutput 
-                + " fully vaccinated, " + "and " + extraOutput + " received "
-                + "an additional dose throughout " + locationOutput + ".";  
+        output = "Partially Vaccinated: " + part 
+                + "\nFully Vaccinated: " + full
+                + "\nAdditional Dose: " + extra + "\n"; 
   
         return output; // Returns answer
     }

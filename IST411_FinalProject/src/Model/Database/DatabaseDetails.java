@@ -107,7 +107,7 @@ public class DatabaseDetails {
             password = resources.getString("jdbc.password");
             
             // Displays that the database is connected and the database address
-            System.out.println("Connected to: "+ url);
+            //System.out.println("Connected to: "+ url);
         } catch (Exception exp) {
              // Displays the encountered exception
             System.out.println("Couldn't load resources." + exp);

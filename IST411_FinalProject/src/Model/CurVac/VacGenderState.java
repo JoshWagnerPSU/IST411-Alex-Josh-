@@ -2,9 +2,10 @@ package Model.CurVac;
 
 /**
  * IST 411 Final Project
- * File: 
+ * File: VacGenderState.java
  * 
- * Purpose: 
+ * Purpose: Represents a JSON object that describes vaccination totals 
+ *          throughout Pennsylvania for a specific gender group.
  * 
  * Last Edited On:4/20/2022
  * Last Edited By: Alex Koontz
@@ -75,7 +76,4 @@ public class VacGenderState {
     public void setAdditional_dose(String additional_dose) {
         this.additional_dose = additional_dose;
     }
-    
-    
-
 }

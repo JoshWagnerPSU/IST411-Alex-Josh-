@@ -4,7 +4,8 @@ package Model.CurDeath;
  * IST 411 Final Project
  * File: DeathAgeCounty.java
  * 
- * Purpose: 
+ * Purpose: Represents a JSON object that describes the number of deaths in a 
+ *          specific county for a specific age group.
  * 
  * Last Edited On:4/20/2022
  * Last Edited By: Josh Wagner
@@ -18,13 +19,6 @@ public class DeathAgeCounty {
     private String county,
                    age,
                    count;
-    
-    /**
-     * 
-     */
-    public DeathAgeCounty(){
-        
-    }
 
     /**
      * @return the county
@@ -67,6 +61,4 @@ public class DeathAgeCounty {
     public void setCount(String count) {
         this.count = count;
     }
-    
-    
 }

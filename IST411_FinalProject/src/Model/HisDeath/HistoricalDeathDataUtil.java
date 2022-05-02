@@ -15,7 +15,6 @@ package Model.HisDeath;
  * @author Alex Koontz and Josh Wagner
  */
 
-
 import com.google.gson.Gson;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -34,20 +33,20 @@ public class HistoricalDeathDataUtil {
     
     
     /**
+    * run() sets the private attribute, creates the database table, and 
+     *      determines if new data needs to be added.
     * 
-    * 
-    * @param stmt 
+    * @param stmt Database Statement object. 
     */
     public static void run(Statement stmt){
         HistoricalDeathDataUtil.stmt = stmt;
-        //createTable();
+        createTable();
         determineUpdateNeed();
-    }
-    
+    } 
    
     
     /**
-     * 
+     * createTable() creates the database table.
      */
     private static void createTable(){
        String create = "CREATE TABLE Historical_Death (" 
@@ -56,7 +55,6 @@ public class HistoricalDeathDataUtil {
                + "TotalDeaths INT, " 
                + "PRIMARY KEY (EntryDate, County)" 
                + ")";
-       
        try{
            stmt.execute(create);
        } catch (Exception e){
@@ -64,12 +62,16 @@ public class HistoricalDeathDataUtil {
        }
     }
     
+    
+    /**
+     * determineUpdateNeed() determines if new data needs to be added to the 
+     *      database table.
+     */
     private static void determineUpdateNeed(){
+        // Local variables
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
         Date today = new Date();  
-        
         Date lastUpdate;
-       
         String firstDataDate = "2020-02-01 00:00:00.000";
         String lastDateQuery = "SELECT MAX(EntryDate) AS LastDate FROM "
                + "Historical_Death";
@@ -78,6 +80,12 @@ public class HistoricalDeathDataUtil {
             ResultSet rs = stmt.executeQuery(lastDateQuery);
             rs.next();
             
+            /*
+             * Checks when the date of the last update was, if its today the 
+             *      the lastUpdate variable is set to today, if there is no
+             *      last date the lastUpdate is set to the local variable,
+             *      otherwise the last date is set to the returned value
+             */
             if(rs.getDate("LastDate") == today){
                 lastUpdate = today;
             } else if (rs.getDate("LastDate") == null){
@@ -86,32 +94,41 @@ public class HistoricalDeathDataUtil {
                 lastUpdate = rs.getDate("LastDate");
             }
 
+            // Checks if the last update wasn't today
             if(lastUpdate != today){
+                // Calls method to add new data to tables
                 iterateUpdate(lastUpdate, today);
             }
-
         } catch (Exception e){
             System.out.println(e.toString());
-            e.printStackTrace();
         }
     }
     
-    
+    /**
+     * iterateUpdate() calls method to update table with custom urls a number 
+     *      of times equal to the number of days between the last update and
+     *      today.
+     * 
+     * @param lastUpdate The last date of a table entry.
+     * @param today Today's date.
+     */
     private static void iterateUpdate(Date lastUpdate, Date today){
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
-        
         Calendar c = Calendar.getInstance();
         c.setTime(lastUpdate);
 
+        // Determiens the number of months between entries (i.e. iterations)
         LocalDate firstDate = LocalDate.parse(sdf.format(lastUpdate));
         LocalDate secondDate = LocalDate.parse(sdf.format(today));
         long cycles = ChronoUnit.MONTHS.between(firstDate, secondDate);
         
+        // Local varialbes to generate custom url
         String url1 = "https://data.pa.gov/resource/w932-e7qx.json?date=";
         String url2;
         String url3 = "T00:00:00.000";
         String url;
         
+        // Loops through each iteration and adds a new entry using a custom url
         for (long i = 0; i < cycles; i++){
             c.add(Calendar.MONTH, 1);
             url2 = sdf.format(c.getTime());
@@ -120,30 +137,30 @@ public class HistoricalDeathDataUtil {
         }
     }
     
+    
+    /**
+     * updateTable() adds a new vaccination entry to the database table.
+     * 
+     * @param url The web address of the api.
+     */
     private static void updateTable(String url){
         
-        DeathHistorical[] dh;
+        DeathHistorical[] dh; // Array of custom death JSON objects
         try (InputStream inStream = new URL(url).openStream();
              Reader reader = new InputStreamReader(inStream, 
                                                    StandardCharsets.UTF_8)
             ) {        
-            // Creates a Gson object to handle Json data
+            // Creates a Gson object to handle JSON data
             Gson gson = new Gson();
-           
             dh = gson.fromJson(reader, DeathHistorical[].class);
 
-            for(int i =0; i < dh.length; i++){
-                /*System.out.println(i);
-                System.out.println(dh[i].getDate());
-                System.out.println(dh[i].getCounty());
-                System.out.println(dh[i].getDeaths_cume());
-                System.out.print("\n\n"); */
-                
+            for(int i =0; i < dh.length; i++){ // Loops through array
+                // Local variables to hold data values
                 String date = dh[i].getDate().substring(0,10);
                 String county = dh[i].getCounty();
                 String total = dh[i].getDeaths_cume();
                 
-                
+                // String to add new entry
                 String update = "INSERT INTO Historical_Death "
                     + "(EntryDate, County, TotalDeaths) "
                     + "VALUES ('"
@@ -151,12 +168,10 @@ public class HistoricalDeathDataUtil {
                     + county + "', "
                     + total + ")";
                 
-               stmt.execute(update);
+               stmt.execute(update); // Adds new entry to table
             }
-
         } catch (Exception e){
             System.out.println(e.toString());
-            e.printStackTrace();
         }
     }
 }

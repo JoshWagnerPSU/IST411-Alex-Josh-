@@ -2,9 +2,10 @@ package Model.CurVac;
 
 /**
  * IST 411 Final Project
- * File: 
+ * File: VacAgeCounty.java
  * 
- * Purpose: 
+ * Purpose: Represents a JSON object that describes vaccination totals for
+ *          different age groups in a specific county.
  * 
  * Last Edited On:4/20/2022
  * Last Edited By: Alex Koontz
@@ -97,9 +98,11 @@ public class VacAgeCounty {
     }
 
     /**
-     * @param partially_covered_age_group_5_9 the partially_covered_age_group_5_9 to set
+     * @param partially_covered_age_group_5_9 the 
+     *      partially_covered_age_group_5_9 to set
      */
-    public void setPartially_covered_age_group_5_9(String partially_covered_age_group_5_9) {
+    public void setPartially_covered_age_group_5_9(
+            String partially_covered_age_group_5_9) {
         this.partially_covered_age_group_5_9 = partially_covered_age_group_5_9;
     }
 
@@ -111,10 +114,13 @@ public class VacAgeCounty {
     }
 
     /**
-     * @param partially_covered_age_group_10_14 the partially_covered_age_group_10_14 to set
+     * @param partially_covered_age_group_10_14 the 
+     *      partially_covered_age_group_10_14 to set
      */
-    public void setPartially_covered_age_group_10_14(String partially_covered_age_group_10_14) {
-        this.partially_covered_age_group_10_14 = partially_covered_age_group_10_14;
+    public void setPartially_covered_age_group_10_14(
+            String partially_covered_age_group_10_14) {
+        this.partially_covered_age_group_10_14 = 
+                partially_covered_age_group_10_14;
     }
 
     /**
@@ -365,7 +371,8 @@ public class VacAgeCounty {
     /**
      * @param fully_covered_age_group_5_9 the fully_covered_age_group_5_9 to set
      */
-    public void setFully_covered_age_group_5_9(String fully_covered_age_group_5_9) {
+    public void setFully_covered_age_group_5_9(
+            String fully_covered_age_group_5_9) {
         this.fully_covered_age_group_5_9 = fully_covered_age_group_5_9;
     }
 
@@ -377,9 +384,11 @@ public class VacAgeCounty {
     }
 
     /**
-     * @param fully_covered_age_group_10_14 the fully_covered_age_group_10_14 to set
+     * @param fully_covered_age_group_10_14 the 
+     *      fully_covered_age_group_10_14 to set
      */
-    public void setFully_covered_age_group_10_14(String fully_covered_age_group_10_14) {
+    public void setFully_covered_age_group_10_14(
+            String fully_covered_age_group_10_14) {
         this.fully_covered_age_group_10_14 = fully_covered_age_group_10_14;
     }
 
@@ -643,9 +652,11 @@ public class VacAgeCounty {
     }
 
     /**
-     * @param additional_dose_age_group_10_14 the additional_dose_age_group_10_14 to set
+     * @param additional_dose_age_group_10_14 the 
+     *      additional_dose_age_group_10_14 to set
      */
-    public void setAdditional_dose_age_group_10_14(String additional_dose_age_group_10_14) {
+    public void setAdditional_dose_age_group_10_14(
+            String additional_dose_age_group_10_14) {
         this.additional_dose_age_group_10_14 = additional_dose_age_group_10_14;
     }
 
@@ -657,9 +668,11 @@ public class VacAgeCounty {
     }
 
     /**
-     * @param additional_dose_age_group_15_19 the additional_dose_age_group_15_19 to set
+     * @param additional_dose_age_group_15_19 the 
+     *      additional_dose_age_group_15_19 to set
      */
-    public void setAdditional_dose_age_group_15_19(String additional_dose_age_group_15_19) {
+    public void setAdditional_dose_age_group_15_19(
+            String additional_dose_age_group_15_19) {
         this.additional_dose_age_group_15_19 = additional_dose_age_group_15_19;
     }
 
@@ -671,9 +684,11 @@ public class VacAgeCounty {
     }
 
     /**
-     * @param additional_dose_age_group_20_24 the additional_dose_age_group_20_24 to set
+     * @param additional_dose_age_group_20_24 the 
+     *      additional_dose_age_group_20_24 to set
      */
-    public void setAdditional_dose_age_group_20_24(String additional_dose_age_group_20_24) {
+    public void setAdditional_dose_age_group_20_24(
+            String additional_dose_age_group_20_24) {
         this.additional_dose_age_group_20_24 = additional_dose_age_group_20_24;
     }
 
@@ -685,9 +700,11 @@ public class VacAgeCounty {
     }
 
     /**
-     * @param additional_dose_age_group_25_29 the additional_dose_age_group_25_29 to set
+     * @param additional_dose_age_group_25_29 the 
+     *      additional_dose_age_group_25_29 to set
      */
-    public void setAdditional_dose_age_group_25_29(String additional_dose_age_group_25_29) {
+    public void setAdditional_dose_age_group_25_29(
+            String additional_dose_age_group_25_29) {
         this.additional_dose_age_group_25_29 = additional_dose_age_group_25_29;
     }
 
@@ -699,9 +716,11 @@ public class VacAgeCounty {
     }
 
     /**
-     * @param additional_dose_age_group_30_34 the additional_dose_age_group_30_34 to set
+     * @param additional_dose_age_group_30_34 the 
+     *      additional_dose_age_group_30_34 to set
      */
-    public void setAdditional_dose_age_group_30_34(String additional_dose_age_group_30_34) {
+    public void setAdditional_dose_age_group_30_34(
+            String additional_dose_age_group_30_34) {
         this.additional_dose_age_group_30_34 = additional_dose_age_group_30_34;
     }
 
@@ -713,9 +732,11 @@ public class VacAgeCounty {
     }
 
     /**
-     * @param additional_dose_age_group_35_39 the additional_dose_age_group_35_39 to set
+     * @param additional_dose_age_group_35_39 the 
+     *      additional_dose_age_group_35_39 to set
      */
-    public void setAdditional_dose_age_group_35_39(String additional_dose_age_group_35_39) {
+    public void setAdditional_dose_age_group_35_39(
+            String additional_dose_age_group_35_39) {
         this.additional_dose_age_group_35_39 = additional_dose_age_group_35_39;
     }
 
@@ -727,9 +748,11 @@ public class VacAgeCounty {
     }
 
     /**
-     * @param additional_dose_age_group_40_44 the additional_dose_age_group_40_44 to set
+     * @param additional_dose_age_group_40_44 the 
+     *      additional_dose_age_group_40_44 to set
      */
-    public void setAdditional_dose_age_group_40_44(String additional_dose_age_group_40_44) {
+    public void setAdditional_dose_age_group_40_44(
+            String additional_dose_age_group_40_44) {
         this.additional_dose_age_group_40_44 = additional_dose_age_group_40_44;
     }
 
@@ -741,9 +764,11 @@ public class VacAgeCounty {
     }
 
     /**
-     * @param additional_dose_age_group_45_49 the additional_dose_age_group_45_49 to set
+     * @param additional_dose_age_group_45_49 the 
+     *      additional_dose_age_group_45_49 to set
      */
-    public void setAdditional_dose_age_group_45_49(String additional_dose_age_group_45_49) {
+    public void setAdditional_dose_age_group_45_49(
+            String additional_dose_age_group_45_49) {
         this.additional_dose_age_group_45_49 = additional_dose_age_group_45_49;
     }
 
@@ -755,9 +780,11 @@ public class VacAgeCounty {
     }
 
     /**
-     * @param additional_dose_age_group_50_54 the additional_dose_age_group_50_54 to set
+     * @param additional_dose_age_group_50_54 the 
+     *      additional_dose_age_group_50_54 to set
      */
-    public void setAdditional_dose_age_group_50_54(String additional_dose_age_group_50_54) {
+    public void setAdditional_dose_age_group_50_54(
+            String additional_dose_age_group_50_54) {
         this.additional_dose_age_group_50_54 = additional_dose_age_group_50_54;
     }
 
@@ -769,9 +796,11 @@ public class VacAgeCounty {
     }
 
     /**
-     * @param additional_dose_age_group_55_59 the additional_dose_age_group_55_59 to set
+     * @param additional_dose_age_group_55_59 the 
+     *      additional_dose_age_group_55_59 to set
      */
-    public void setAdditional_dose_age_group_55_59(String additional_dose_age_group_55_59) {
+    public void setAdditional_dose_age_group_55_59(
+            String additional_dose_age_group_55_59) {
         this.additional_dose_age_group_55_59 = additional_dose_age_group_55_59;
     }
 
@@ -783,9 +812,11 @@ public class VacAgeCounty {
     }
 
     /**
-     * @param additional_dose_age_group_60_64 the additional_dose_age_group_60_64 to set
+     * @param additional_dose_age_group_60_64 the 
+     *      additional_dose_age_group_60_64 to set
      */
-    public void setAdditional_dose_age_group_60_64(String additional_dose_age_group_60_64) {
+    public void setAdditional_dose_age_group_60_64(
+            String additional_dose_age_group_60_64) {
         this.additional_dose_age_group_60_64 = additional_dose_age_group_60_64;
     }
 
@@ -797,9 +828,11 @@ public class VacAgeCounty {
     }
 
     /**
-     * @param additional_dose_age_group_65_69 the additional_dose_age_group_65_69 to set
+     * @param additional_dose_age_group_65_69 the 
+     *      additional_dose_age_group_65_69 to set
      */
-    public void setAdditional_dose_age_group_65_69(String additional_dose_age_group_65_69) {
+    public void setAdditional_dose_age_group_65_69(
+            String additional_dose_age_group_65_69) {
         this.additional_dose_age_group_65_69 = additional_dose_age_group_65_69;
     }
 
@@ -811,9 +844,11 @@ public class VacAgeCounty {
     }
 
     /**
-     * @param additional_dose_age_group_70_74 the additional_dose_age_group_70_74 to set
+     * @param additional_dose_age_group_70_74 the 
+     *      additional_dose_age_group_70_74 to set
      */
-    public void setAdditional_dose_age_group_70_74(String additional_dose_age_group_70_74) {
+    public void setAdditional_dose_age_group_70_74(
+            String additional_dose_age_group_70_74) {
         this.additional_dose_age_group_70_74 = additional_dose_age_group_70_74;
     }
 
@@ -825,9 +860,11 @@ public class VacAgeCounty {
     }
 
     /**
-     * @param additional_dose_age_group_75_79 the additional_dose_age_group_75_79 to set
+     * @param additional_dose_age_group_75_79 the 
+     *      additional_dose_age_group_75_79 to set
      */
-    public void setAdditional_dose_age_group_75_79(String additional_dose_age_group_75_79) {
+    public void setAdditional_dose_age_group_75_79(
+            String additional_dose_age_group_75_79) {
         this.additional_dose_age_group_75_79 = additional_dose_age_group_75_79;
     }
 
@@ -839,9 +876,11 @@ public class VacAgeCounty {
     }
 
     /**
-     * @param additional_dose_age_group_80_84 the additional_dose_age_group_80_84 to set
+     * @param additional_dose_age_group_80_84 the 
+     *      additional_dose_age_group_80_84 to set
      */
-    public void setAdditional_dose_age_group_80_84(String additional_dose_age_group_80_84) {
+    public void setAdditional_dose_age_group_80_84(
+            String additional_dose_age_group_80_84) {
         this.additional_dose_age_group_80_84 = additional_dose_age_group_80_84;
     }
 
@@ -853,9 +892,11 @@ public class VacAgeCounty {
     }
 
     /**
-     * @param additional_dose_age_group_85_89 the additional_dose_age_group_85_89 to set
+     * @param additional_dose_age_group_85_89 the 
+     *      additional_dose_age_group_85_89 to set
      */
-    public void setAdditional_dose_age_group_85_89(String additional_dose_age_group_85_89) {
+    public void setAdditional_dose_age_group_85_89(
+            String additional_dose_age_group_85_89) {
         this.additional_dose_age_group_85_89 = additional_dose_age_group_85_89;
     }
 
@@ -867,9 +908,11 @@ public class VacAgeCounty {
     }
 
     /**
-     * @param additional_dose_age_group_90_94 the additional_dose_age_group_90_94 to set
+     * @param additional_dose_age_group_90_94 the 
+     *      additional_dose_age_group_90_94 to set
      */
-    public void setAdditional_dose_age_group_90_94(String additional_dose_age_group_90_94) {
+    public void setAdditional_dose_age_group_90_94(
+            String additional_dose_age_group_90_94) {
         this.additional_dose_age_group_90_94 = additional_dose_age_group_90_94;
     }
 
@@ -881,9 +924,11 @@ public class VacAgeCounty {
     }
 
     /**
-     * @param additional_dose_age_group_95_99 the additional_dose_age_group_95_99 to set
+     * @param additional_dose_age_group_95_99 the 
+     *      additional_dose_age_group_95_99 to set
      */
-    public void setAdditional_dose_age_group_95_99(String additional_dose_age_group_95_99) {
+    public void setAdditional_dose_age_group_95_99(
+            String additional_dose_age_group_95_99) {
         this.additional_dose_age_group_95_99 = additional_dose_age_group_95_99;
     }
 
@@ -895,12 +940,12 @@ public class VacAgeCounty {
     }
 
     /**
-     * @param additional_dose_age_group_100_104 the additional_dose_age_group_100_104 to set
+     * @param additional_dose_age_group_100_104 the 
+     *      additional_dose_age_group_100_104 to set
      */
-    public void setAdditional_dose_age_group_100_104(String additional_dose_age_group_100_104) {
-        this.additional_dose_age_group_100_104 = additional_dose_age_group_100_104;
+    public void setAdditional_dose_age_group_100_104(
+            String additional_dose_age_group_100_104) {
+        this.additional_dose_age_group_100_104 = 
+                additional_dose_age_group_100_104;
     }
-
-    
-    
 }

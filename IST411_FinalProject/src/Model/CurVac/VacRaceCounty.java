@@ -2,9 +2,10 @@ package Model.CurVac;
 
 /**
  * IST 411 Final Project
- * File: 
+ * File: VacRaceCounty.java
  * 
- * Purpose: 
+ * Purpose: Represents a JSON object that describes vaccination totals for
+ *          different race groups in a specific county.
  * 
  * Last Edited On:4/20/2022
  * Last Edited By: Alex Koontz
@@ -60,10 +61,13 @@ public class VacRaceCounty {
     }
 
     /**
-     * @param partially_covered_african_american the partially_covered_african_american to set
+     * @param partially_covered_african_american the 
+     *      partially_covered_african_american to set
      */
-    public void setPartially_covered_african_american(String partially_covered_african_american) {
-        this.partially_covered_african_american = partially_covered_african_american;
+    public void setPartially_covered_african_american(
+            String partially_covered_african_american) {
+        this.partially_covered_african_american = 
+                partially_covered_african_american;
     }
 
     /**
@@ -88,10 +92,13 @@ public class VacRaceCounty {
     }
 
     /**
-     * @param partially_covered_native_american the partially_covered_native_american to set
+     * @param partially_covered_native_american the 
+     *      partially_covered_native_american to set
      */
-    public void setPartially_covered_native_american(String partially_covered_native_american) {
-        this.partially_covered_native_american = partially_covered_native_american;
+    public void setPartially_covered_native_american(
+            String partially_covered_native_american) {
+        this.partially_covered_native_american = 
+                partially_covered_native_american;
     }
 
     /**
@@ -102,10 +109,13 @@ public class VacRaceCounty {
     }
 
     /**
-     * @param partially_covered_pacific_islander the partially_covered_pacific_islander to set
+     * @param partially_covered_pacific_islander the 
+     * partially_covered_pacific_islander to set
      */
-    public void setPartially_covered_pacific_islander(String partially_covered_pacific_islander) {
-        this.partially_covered_pacific_islander = partially_covered_pacific_islander;
+    public void setPartially_covered_pacific_islander(
+            String partially_covered_pacific_islander) {
+        this.partially_covered_pacific_islander = 
+                partially_covered_pacific_islander;
     }
 
     /**
@@ -116,10 +126,13 @@ public class VacRaceCounty {
     }
 
     /**
-     * @param partially_covered_multiple_other the partially_covered_multiple_other to set
+     * @param partially_covered_multiple_other the 
+     * partially_covered_multiple_other to set
      */
-    public void setPartially_covered_multiple_other(String partially_covered_multiple_other) {
-        this.partially_covered_multiple_other = partially_covered_multiple_other;
+    public void setPartially_covered_multiple_other(
+            String partially_covered_multiple_other) {
+        this.partially_covered_multiple_other = 
+                partially_covered_multiple_other;
     }
 
     /**
@@ -158,9 +171,11 @@ public class VacRaceCounty {
     }
 
     /**
-     * @param fully_covered_african_american the fully_covered_african_american to set
+     * @param fully_covered_african_american the 
+     *      fully_covered_african_american to set
      */
-    public void setFully_covered_african_american(String fully_covered_african_american) {
+    public void setFully_covered_african_american(
+            String fully_covered_african_american) {
         this.fully_covered_african_american = fully_covered_african_american;
     }
 
@@ -186,9 +201,11 @@ public class VacRaceCounty {
     }
 
     /**
-     * @param fully_covered_native_american the fully_covered_native_american to set
+     * @param fully_covered_native_american the 
+     *      fully_covered_native_american to set
      */
-    public void setFully_covered_native_american(String fully_covered_native_american) {
+    public void setFully_covered_native_american(
+            String fully_covered_native_american) {
         this.fully_covered_native_american = fully_covered_native_american;
     }
 
@@ -200,9 +217,11 @@ public class VacRaceCounty {
     }
 
     /**
-     * @param fully_covered_pacific_islander the fully_covered_pacific_islander to set
+     * @param fully_covered_pacific_islander the 
+     *      fully_covered_pacific_islander to set
      */
-    public void setFully_covered_pacific_islander(String fully_covered_pacific_islander) {
+    public void setFully_covered_pacific_islander(
+            String fully_covered_pacific_islander) {
         this.fully_covered_pacific_islander = fully_covered_pacific_islander;
     }
 
@@ -214,9 +233,11 @@ public class VacRaceCounty {
     }
 
     /**
-     * @param fully_covered_multiple_other the fully_covered_multiple_other to set
+     * @param fully_covered_multiple_other the 
+     *      fully_covered_multiple_other to set
      */
-    public void setFully_covered_multiple_other(String fully_covered_multiple_other) {
+    public void setFully_covered_multiple_other(
+            String fully_covered_multiple_other) {
         this.fully_covered_multiple_other = fully_covered_multiple_other;
     }
 
@@ -256,10 +277,13 @@ public class VacRaceCounty {
     }
 
     /**
-     * @param additional_dose_african_american the additional_dose_african_american to set
+     * @param additional_dose_african_american the 
+     *      additional_dose_african_american to set
      */
-    public void setAdditional_dose_african_american(String additional_dose_african_american) {
-        this.additional_dose_african_american = additional_dose_african_american;
+    public void setAdditional_dose_african_american(
+            String additional_dose_african_american) {
+        this.additional_dose_african_american = 
+                additional_dose_african_american;
     }
 
     /**
@@ -284,9 +308,11 @@ public class VacRaceCounty {
     }
 
     /**
-     * @param additional_dose_native_american the additional_dose_native_american to set
+     * @param additional_dose_native_american the 
+     *      additional_dose_native_american to set
      */
-    public void setAdditional_dose_native_american(String additional_dose_native_american) {
+    public void setAdditional_dose_native_american(
+            String additional_dose_native_american) {
         this.additional_dose_native_american = additional_dose_native_american;
     }
 
@@ -298,10 +324,13 @@ public class VacRaceCounty {
     }
 
     /**
-     * @param additional_dose_pacifica_islander the additional_dose_pacifica_islander to set
+     * @param additional_dose_pacifica_islander the 
+     *      additional_dose_pacifica_islander to set
      */
-    public void setAdditional_dose_pacifica_islander(String additional_dose_pacifica_islander) {
-        this.additional_dose_pacifica_islander = additional_dose_pacifica_islander;
+    public void setAdditional_dose_pacifica_islander(
+            String additional_dose_pacifica_islander) {
+        this.additional_dose_pacifica_islander = 
+                additional_dose_pacifica_islander;
     }
 
     /**
@@ -312,9 +341,11 @@ public class VacRaceCounty {
     }
 
     /**
-     * @param additional_dose_multiple_other the additional_dose_multiple_other to set
+     * @param additional_dose_multiple_other the 
+     *      additional_dose_multiple_other to set
      */
-    public void setAdditional_dose_multiple_other(String additional_dose_multiple_other) {
+    public void setAdditional_dose_multiple_other(
+            String additional_dose_multiple_other) {
         this.additional_dose_multiple_other = additional_dose_multiple_other;
     }
 
@@ -345,7 +376,4 @@ public class VacRaceCounty {
     public void setAdditional_dose_unknown(String additional_dose_unknown) {
         this.additional_dose_unknown = additional_dose_unknown;
     }
-    
-    
-
 }

@@ -2,9 +2,10 @@ package Model.CurVac;
 
 /**
  * IST 411 Final Project
- * File: 
+ * File: VacGenderCounty.java
  * 
- * Purpose: 
+ * Purpose: Represents a JSON object that describes vaccination totals for
+ *          different gender groups in a specific county.
  * 
  * Last Edited On:4/20/2022
  * Last Edited By: Alex Koontz
@@ -164,7 +165,5 @@ public class VacGenderCounty {
      */
     public void setAdditional_dose_unknown(String additional_dose_unknown) {
         this.additional_dose_unknown = additional_dose_unknown;
-    }
-
-    
+    } 
 }
