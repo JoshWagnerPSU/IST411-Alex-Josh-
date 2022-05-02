@@ -249,7 +249,7 @@ public class CurrentDeathData {
             if(dac[i].getAge().equals(suboption)){ // If age group matches
                 try{ // Adds deaths to totalCount
                     totalCount += Integer.valueOf(dac[i].getCount());
-                } catch(Exception e){System.out.println(e);}
+                } catch(Exception e){}
             }
         }
         answer = "Deaths: " + String.valueOf(totalCount); // Formats answer
@@ -273,7 +273,7 @@ public class CurrentDeathData {
             if(dgc[i].getSex().equals(suboption)){ // If gender group matches
                 try{ // Adds deaths to totalCount
                     totalCount += Integer.valueOf(dgc[i].getCount());
-                } catch(Exception e){System.out.println(e);}
+                } catch(Exception e){}
             }
         }
         answer = "Deaths: " + String.valueOf(totalCount); // Formats answer
@@ -297,7 +297,7 @@ public class CurrentDeathData {
             if(drc[i].getRace().equals(suboption)){ // If race group matches
                 try{ // Adds deaths to totalCount
                     totalCount += Integer.valueOf(drc[i].getCount());
-                } catch(Exception e){System.out.println(e);}
+                } catch(Exception e){}
             }
         }
         answer = "Deaths: " + String.valueOf(totalCount); // Formats answer
