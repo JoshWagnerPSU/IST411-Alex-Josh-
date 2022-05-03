@@ -5,7 +5,7 @@ package Model.CurDeath;
  * File: CurrentDeathData.java
  * 
  * Purpose: Represents the current death data in Pennsylvania, made up of
- *          custom object arrays, and handles search calculations.
+ *          custom object arrays, and handles search calculations. <(O_O)>
  * 
  * Last Edited On:4/20/2022
  * Last Edited By: Josh Wagner
