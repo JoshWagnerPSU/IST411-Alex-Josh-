@@ -120,12 +120,12 @@ public class HistoricalVacDataUtil {
         Calendar c = Calendar.getInstance();
         c.setTime(lastUpdate);
         
-        // Determiens the number of days between entries (i.e. iterations)
+        // Determines the number of days between entries (i.e. iterations)
         LocalDate firstDate = LocalDate.parse(sdf.format(lastUpdate));
         LocalDate secondDate = LocalDate.parse(sdf.format(today));
         long cycles = ChronoUnit.DAYS.between(firstDate, secondDate);
         
-        // Local varialbes to generate custom url
+        // Local variables to generate custom url
         String url1 = "https://data.pa.gov/resource/bicw-3gwi.json?date=";
         String url2;
         String url3 = "T00:00:00.000";
